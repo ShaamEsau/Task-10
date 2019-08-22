@@ -1,0 +1,4 @@
+1. Select one number from 1 - 5.
+2. Once a number is selected, click on Start! and see whats the outcome!
+3. After two seconds see if you win! 
+4. Once the outcome has been shown you can select another number and Try Again

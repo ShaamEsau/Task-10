@@ -1,33 +1,60 @@
-.App {
+body {
+  /* Aligns the text and objects on the page */
   text-align: center;
+  /* Sets the background color */
+  background-color: powderblue;
+  /* Sets the font family*/
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#Logo{
+  /*Sets the width to 50% of the page*/
+  width: 50%;
+  /* Sets the height of the image*/
+  height: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#chanceBtns{
+  /* Positions the buttons to be inline of each other */
+  display: inline-block;
+  /* Adds padding around the whole button*/
+  padding: 5px;
+}
+
+#valueBtn, #initBtn{
+  /* Adds specified values of padding to the top, right, bottom and left of the button */
+  padding: 10px 20px 10px 20px;
+  /* Changes the background color */
+  background-color: red;
+  /* Changes the font color*/
   color: white;
+  /* Adds a solid black line as a border */
+  border : 1px solid black;
+  /* Aligns the text to the center */
+  text-align: center;
+  /* Changes font to a bold style */
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling happens when button is clicked on */
+#valueBtn:active, #initBtn:active{
+    /* Changes background color */
+    background-color: powderblue;
+    /* Changes font color */
+    color: black
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#rules{
+  /* Changes font to a bold style */
+  font-weight: bold;
 }
+
+#outcome{
+  /* Changes font color to white */
+  color: white;
+  /* Adds a dotted white border */
+  border: 1px white dotted;
+  /* Changes background color to red */
+  background-color: red;
+}
+
