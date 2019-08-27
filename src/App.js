@@ -46,7 +46,7 @@ class App extends React.Component {
             /* Creates a variable that stores an array */
             const chanceBall = ["1", "2", "3", "4", "5"]
             /* Sets a variable with a randomly chosen value in the array */
-            var outcomeBall = chanceBall[Math.floor(Math.random() * 3)]
+            var outcomeBall = chanceBall[Math.floor(Math.random() * 5)]
             /* Increments the counters value*/
             count++
             /* Updates the state with new values  */
@@ -79,34 +79,34 @@ class App extends React.Component {
     }
 
     render() {
-      /* Creates a variable that stores the components and it's properties as an array */
-      const compList = [
-            /* Calls the component */
-            <Heading/>,
-            <Rules/>,
-            /* Sets functions and states as properties specified on the component */
-            <Ticket 
-              onClick = {this.ChoiceClick}
-              choiceValues = {this.state.choiceVals}
-            />,
-            <Draw 
-              onClick = {this.chanceDraw} 
-              chanceValues = {this.state.luckyDraw} 
-              choiceValues = {this.state.userSelect} 
-              outcome = {this.state.winOrLose}
-              startOrTry = {this.state.startOrTry}
-            />
-      ]
+        /* Creates a variable that stores the components and it's properties as an array */
+        const compList = [
+        /* Calls the component */
+        <Heading/>,
+        <Rules/>,
+        /* Sets functions and states as properties specified on the component */
+        <Ticket 
+        onClick = {this.ChoiceClick}
+        choiceValues = {this.state.choiceVals}
+        />,
+        <Draw 
+        onClick = {this.chanceDraw} 
+        chanceValues = {this.state.luckyDraw} 
+        choiceValues = {this.state.userSelect} 
+        outcome = {this.state.winOrLose}
+        startOrTry = {this.state.startOrTry}
+        />
+        ]
         /* Executes and displays data */
         return (
             /* Creates a div box */
             <div className="App">
-                {/* Takes the arrays values and starts pushing them between the specified elements */}
-                {compList.map((index) =>
-                   <div>{index}</div>
-                )}
-            </div>
-        );
+        {/* Takes the arrays values and starts pushing them between the specified elements */}
+        {compList.map((index) =>
+         <div>{index}</div>
+         )}
+         </div>
+         );
     }
 }
 
